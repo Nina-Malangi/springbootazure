@@ -12,5 +12,11 @@ public class SpringAzureGitController {
 	public String getMessages(){
 		return "Hello Azure Git Deployment";
 	}
+	
+	@RequestMapping("/add")
+	@ResponseBody
+	public String getAddition(){
+		return "Add of 1 + 2 is : "+(1+2);
+	}
 
 }
